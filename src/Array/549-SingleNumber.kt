@@ -1,4 +1,4 @@
-fun main(args: Array<String>) {
+fun main() {
     val array = intArrayOf(4, 1, 2, 1, 2, 3, 3)
     println(singleNumber(array))
 }
