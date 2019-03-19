@@ -1,23 +1,18 @@
-import java.util.*
-
-fun main(args: Array<String>) {
+fun main() {
     val array = arrayOf(
-        intArrayOf(1, 2, 3, 4, 5),
-        intArrayOf(1, 2, 3, 4, 5),
-        intArrayOf(1, 2, 3, 4, 5),
-        intArrayOf(1, 2, 3, 4, 5),
-        intArrayOf(1, 2, 3, 4, 5)
+            intArrayOf(1, 2, 3, 4, 5),
+            intArrayOf(1, 2, 3, 4, 5),
+            intArrayOf(1, 2, 3, 4, 5),
+            intArrayOf(1, 2, 3, 4, 5),
+            intArrayOf(1, 2, 3, 4, 5)
     )
-    twoDemisionalPrint(array)
+    twoDemissionalPrint(array)
     rotate(array)
-    twoDemisionalPrint(array)
+    twoDemissionalPrint(array)
 }
 
-fun twoDemisionalPrint(matrix: Array<IntArray>) {
-    for (line in matrix) {
-        val content = Arrays.toString(line)
-        println(content)
-    }
+fun twoDemissionalPrint(matrix: Array<IntArray>) {
+    matrix.forEach { it.printContent() }
 }
 
 fun rotate(matrix: Array<IntArray>): Unit {

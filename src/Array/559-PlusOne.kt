@@ -1,9 +1,6 @@
-import java.util.*
-
 fun main() {
-    val array = intArrayOf(1, 2, 3)
-    val content = Arrays.toString(plusOne(array))
-    print(content)
+    val array = intArrayOf(1, 2, 9)
+    plusOne(array).printContent()
 }
 
 fun plusOne(digits: IntArray): IntArray {

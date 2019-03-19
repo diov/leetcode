@@ -1,10 +1,7 @@
-import java.util.*
-
-fun main(args: Array<String>) {
+fun main() {
     val array = intArrayOf(1, 2, 3, 4, 5, 6, 7)
     rotate(array, 3)
-    val content = Arrays.toString(array)
-    print(content)
+    array.printContent()
 }
 
 fun rotate(nums: IntArray, k: Int): Unit {

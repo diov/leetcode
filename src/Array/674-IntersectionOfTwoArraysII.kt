@@ -1,12 +1,9 @@
-import java.util.Arrays
-import kotlin.collections.ArrayList
 import kotlin.math.min
 
-fun main(args: Array<String>) {
+fun main() {
     val nums1 = intArrayOf(4, 9, 5)
     val nums2 = intArrayOf(9, 4, 9, 8, 4)
-    val content = Arrays.toString(intersect(nums1, nums2))
-    println(content)
+    intersect(nums1, nums2).printContent()
 }
 
 fun intersect(nums1: IntArray, nums2: IntArray): IntArray {

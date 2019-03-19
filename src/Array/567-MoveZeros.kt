@@ -1,10 +1,7 @@
-import java.util.*
-
-fun main(args: Array<String>) {
+fun main() {
     val array = intArrayOf(0, 1, 0, 3, 12)
     moveZeros(array)
-    val content = Arrays.toString(array)
-    println(content)
+    array.printContent()
 }
 
 fun moveZeros(nums: IntArray): Unit {

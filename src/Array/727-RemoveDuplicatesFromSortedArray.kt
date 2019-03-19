@@ -1,10 +1,7 @@
-import java.util.*
-
-fun main(args: Array<String>) {
+fun main() {
     val array = intArrayOf(0, 0, 1, 1, 1, 2, 2, 3, 3, 4)
     val length = removeDuplicates(array)
-    val content = Arrays.toString(array.sliceArray(IntRange(0, length - 1)))
-    print(content)
+    array.sliceArray(IntRange(0, length - 1)).printContent()
 }
 
 fun removeDuplicates(nums: IntArray): Int {

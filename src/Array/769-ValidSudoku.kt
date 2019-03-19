@@ -1,4 +1,4 @@
-fun main(args: Array<String>) {
+fun main() {
     val row1 = charArrayOf('5', '3', '.', '.', '7', '.', '.', '.', '.')
     val row2 = charArrayOf('6', '.', '.', '1', '9', '5', '.', '.', '.')
     val row3 = charArrayOf('.', '9', '8', '.', '.', '.', '.', '6', '.')
