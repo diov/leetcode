@@ -5,3 +5,7 @@ fun Array<Any>.printContent() {
 fun IntArray.printContent() {
     println(this.joinToString(prefix = "[", postfix = "]"))
 }
+
+fun BooleanArray.printContent() {
+    println(this.joinToString(prefix = "[", postfix = "]"))
+}
