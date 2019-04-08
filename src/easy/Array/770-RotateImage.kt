@@ -6,13 +6,9 @@ fun main() {
             intArrayOf(1, 2, 3, 4, 5),
             intArrayOf(1, 2, 3, 4, 5)
     )
-    twoDemissionalPrint(array)
+    array.printlnMatrix()
     rotate(array)
-    twoDemissionalPrint(array)
-}
-
-fun twoDemissionalPrint(matrix: Array<IntArray>) {
-    matrix.forEach { it.printContent() }
+    array.printlnMatrix()
 }
 
 fun rotate(matrix: Array<IntArray>): Unit {
