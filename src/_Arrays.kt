@@ -1,4 +1,4 @@
-fun Array<Any>.printContent() {
+fun <T> Array<T>.printContent() {
     println(this.joinToString(prefix = "[", postfix = "]"))
 }
 
