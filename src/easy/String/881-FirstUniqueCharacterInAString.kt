@@ -1,4 +1,4 @@
-fun main(args: Array<String>) {
+fun main() {
     val s = "loveleetcode"
     println(firstUniqChar(s))
 }

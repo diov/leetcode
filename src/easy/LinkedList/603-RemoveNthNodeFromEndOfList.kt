@@ -1,4 +1,4 @@
-fun main(args: Array<String>) {
+fun main() {
     val values = intArrayOf(1, 2)
     val head = ListNode(0)
     var current: ListNode? = head
@@ -25,11 +25,11 @@ fun removeNthFromEnd(head: ListNode?, n: Int): ListNode? {
     }
 
     if (null == fast) {
-        return head?.next
+        return head.next
     }
 
     while (null != fast?.next) {
-        fast = fast?.next
+        fast = fast.next
         slow = slow?.next
     }
     slow?.next = slow?.next?.next

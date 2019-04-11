@@ -1,4 +1,4 @@
-fun main(args: Array<String>) {
+fun main() {
     val values = intArrayOf(1, 2)
     val head = ListNode(0)
     var current: ListNode? = head
@@ -19,9 +19,9 @@ fun isPalindrome(head: ListNode?): Boolean {
     var fast = head
     var slow = head
     var pre: ListNode? = null
-    while (null != fast && null != fast?.next) {
+    while (fast?.next != null) {
         fast = fast.next?.next
-        var temp = slow?.next
+        val temp = slow?.next
         slow?.next = pre
         pre = slow
         slow = temp
@@ -32,7 +32,6 @@ fun isPalindrome(head: ListNode?): Boolean {
     }
 
     while (null != slow) {
-        println("pre: ${pre?.`val`}; slow: ${slow?.`val`}")
         if (pre?.`val` != slow.`val`) {
             return false
         }

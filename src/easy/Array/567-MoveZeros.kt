@@ -4,7 +4,7 @@ fun main() {
     array.printContent()
 }
 
-fun moveZeros(nums: IntArray): Unit {
+fun moveZeros(nums: IntArray) {
     var i = 0
     var j = 0
     while (i < nums.count()) {

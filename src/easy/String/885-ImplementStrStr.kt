@@ -1,4 +1,4 @@
-fun main(args: Array<String>) {
+fun main() {
     val haystack = "a"
     val needle = "a"
     println(strStr(haystack, needle))

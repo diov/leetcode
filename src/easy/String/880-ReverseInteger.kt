@@ -1,7 +1,7 @@
 import java.lang.Math.pow
 import kotlin.math.absoluteValue
 
-fun main(args: Array<String>) {
+fun main() {
     val x = -2147483648
     val reverse = reverse(x)
     println(reverse)
@@ -19,9 +19,9 @@ fun reverse(x: Int): Int {
         reverseValue += digit * y
     }
 
-    if (reverseValue > Int.MAX_VALUE) {
-        return 0
+    return if (reverseValue > Int.MAX_VALUE) {
+        0
     } else {
-        return if (x > 0) reverseValue.toInt() else reverseValue.toInt() * -1
+        if (x > 0) reverseValue.toInt() else reverseValue.toInt() * -1
     }
 }

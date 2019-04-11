@@ -1,4 +1,4 @@
-fun main(args: Array<String>) {
+fun main() {
     val s = "9223372036854775808"
     println(myAtoi(s))
 }
@@ -22,9 +22,9 @@ fun myAtoi(str: String): Int {
         }
     }
     println(result)
-    if (result > Int.MAX_VALUE) {
-        return if (positive) Int.MAX_VALUE else Int.MIN_VALUE
+    return if (result > Int.MAX_VALUE) {
+        if (positive) Int.MAX_VALUE else Int.MIN_VALUE
     } else {
-        return if (positive) result.toInt() else result.toInt() * -1
+        if (positive) result.toInt() else result.toInt() * -1
     }
 }

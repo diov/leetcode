@@ -1,4 +1,4 @@
-fun main(args: Array<String>) {
+fun main() {
     val strs = arrayOf("dog", "racecar", "car")
     println(longestCommonPrefix(strs))
 }

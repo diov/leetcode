@@ -1,4 +1,4 @@
-fun main(args: Array<String>) {
+fun main() {
     val prices = intArrayOf(1)
     print(maxProfit(prices))
 }

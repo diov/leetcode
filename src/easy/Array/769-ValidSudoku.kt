@@ -21,7 +21,7 @@ fun isValidSudoku(board: Array<CharArray>): Boolean {
     for (x in 0..8) {
         for (y in 0..8) {
             val value = board[x][y]
-            if (value.equals('.')) continue
+            if (value == '.') continue
             val valueInt = value.toString().toInt() - 1
 
             val matrixNumber = x / 3 * 3 + y / 3

@@ -1,4 +1,4 @@
-fun main(args: Array<String>) {
+fun main() {
     val values = intArrayOf(1, 2)
     val head = ListNode(0)
     var current: ListNode? = head

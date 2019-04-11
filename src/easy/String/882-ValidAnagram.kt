@@ -1,4 +1,4 @@
-fun main(args: Array<String>) {
+fun main() {
     val s = "anagram"
     val t = "nagaram"
     println(isAnagram(s, t))

@@ -5,7 +5,7 @@ fun main() {
     nums1.printContent()
 }
 
-fun merge(nums1: IntArray, m: Int, nums2: IntArray, n: Int): Unit {
+fun merge(nums1: IntArray, m: Int, nums2: IntArray, n: Int) {
     var nums1Index = m - 1
     var nums2Index = n - 1
     while (nums1Index >= 0 && nums2Index >= 0) {

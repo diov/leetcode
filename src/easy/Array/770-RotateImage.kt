@@ -11,7 +11,7 @@ fun main() {
     array.printlnMatrix()
 }
 
-fun rotate(matrix: Array<IntArray>): Unit {
+fun rotate(matrix: Array<IntArray>) {
     val size = matrix.size
     val maxIndex = size - 1
     for (i in 0 until size / 2) {

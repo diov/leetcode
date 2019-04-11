@@ -4,7 +4,7 @@ fun main() {
     array.printContent()
 }
 
-fun rotate(nums: IntArray, k: Int): Unit {
+fun rotate(nums: IntArray, k: Int) {
     var temp: Int
     val count = nums.count()
     if (count < 2) return

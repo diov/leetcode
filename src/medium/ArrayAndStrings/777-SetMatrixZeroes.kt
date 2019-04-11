@@ -6,7 +6,7 @@ fun main() {
     matrix.printlnMatrix()
 }
 
-fun setZeroes(matrix: Array<IntArray>): Unit {
+fun setZeroes(matrix: Array<IntArray>) {
     var rowZero = false
     var columnZero = false
     for (i in 0 until matrix.count()) {

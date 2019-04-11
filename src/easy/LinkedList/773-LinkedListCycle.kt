@@ -1,4 +1,4 @@
-fun main(args: Array<String>) {
+fun main() {
     val values = intArrayOf(1)
     val cycleIndex = 0
     val head = ListNode(0)
@@ -23,9 +23,9 @@ fun main(args: Array<String>) {
 }
 
 fun hasCycle(head: ListNode?): Boolean {
-    if (null == head) return false;
-    var fast = head;
-    var slow = head;
+    if (null == head) return false
+    var fast = head
+    var slow = head
 
     while (null != fast?.next?.next) {
         fast = fast.next?.next

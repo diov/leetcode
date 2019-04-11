@@ -1,4 +1,4 @@
-fun main(args: Array<String>) {
+fun main() {
     val s = "0P"
     println(isPalindrome(s))
 }
